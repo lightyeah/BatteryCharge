@@ -47,6 +47,8 @@
 #include    "LCDConf.h"
 #include    "GLCD.h"
 
+#include 	"rit_test.h"
+
 #include "lpc17xx_libcfg.h"
 
 

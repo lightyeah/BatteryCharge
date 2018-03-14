@@ -138,7 +138,10 @@ static  void  App_TaskCreate (void)
 	App_OSViewTaskCreate();
 #endif	
 	
-	App_UCGUI_TaskCreate();	
+//	App_UCGUI_TaskCreate();	
+  Pluse_Init();
+  RIT_Test_Init();
+  
 
 }
 
