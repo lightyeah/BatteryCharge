@@ -432,10 +432,9 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\Obj\os
-_cpu_a.d -o.\Obj\os_cpu_a.o -I"F:\Program Files (x86)\Keil454\ARM\RV31\Inc" -I"
-F:\Program Files (x86)\Keil454\ARM\CMSIS\Include" -I"F:\Program Files (x86)\Kei
-l454\ARM\Inc\NXP" --predefine="__MICROLIB SETA 1" --list=.\List\os_cpu_a.lst ..
-\USER\uCOS-II\Ports\ARM-Cortex-M3\RealView\os_cpu_a.asm
+_cpu_a.d -o.\Obj\os_cpu_a.o -IG:\Keil\ARM\RV31\Inc -IG:\Keil\ARM\CMSIS\Include 
+-IG:\Keil\ARM\Inc\NXP --predefine="__MICROLIB SETA 1" --list=.\List\os_cpu_a.ls
+t ..\USER\uCOS-II\Ports\ARM-Cortex-M3\RealView\os_cpu_a.asm
 
 
 

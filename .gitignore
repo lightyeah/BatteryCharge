@@ -1,0 +1,11 @@
+*.o
+*.crf
+*.d
+*.__i
+*.hex
+MDK-ARM/LandTiger_open1768.dep
+MDK-ARM/Obj/ucos-ucdemo.axf
+MDK-ARM/Obj/ucos-ucdemo.lnp
+MDK-ARM/Obj/ucos-ucdemo.plg      
+MDK-ARM/Obj/ucos-ucdemo.sct
+MDK-ARM/Obj/ucos-ucdemo.tra

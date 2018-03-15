@@ -1,5 +1,7 @@
 #include "rit_test.h"
-uint32_h count;
+#include "lpc17xx_pinsel.h"
+
+uint32_t count;
 
 void Pluse_Init(void){
 	PINSEL_CFG_Type PinCfg;
