@@ -877,6 +877,21 @@
             </File>
           </Files>
         </Group>
+        <Group>
+          <GroupName>RIT</GroupName>
+          <Files>
+            <File>
+              <FileName>rit_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\RIT\rit_test.c</FilePath>
+            </File>
+            <File>
+              <FileName>rit_test.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\USER\RIT\rit_test.h</FilePath>
+            </File>
+          </Files>
+        </Group>
       </Groups>
     </Target>
   </Targets>
