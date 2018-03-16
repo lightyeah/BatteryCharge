@@ -1171,9 +1171,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>61</ColumnNumber>
+      <ColumnNumber>58</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>72</TopLine>
+      <TopLine>71</TopLine>
       <CurrentLine>75</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\LCP1768_StdPeriph_Driver\source\lpc17xx_clkpwr.c</PathWithFileName>
@@ -1367,9 +1367,9 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>28</ColumnNumber>
+      <ColumnNumber>27</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>154</TopLine>
+      <TopLine>172</TopLine>
       <CurrentLine>179</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\Libraries\LCP1768_StdPeriph_Driver\source\lpc17xx_rit.c</PathWithFileName>
@@ -1508,13 +1508,6 @@
       <PathWithFileName>..\USER\RIT\rit_test.h</PathWithFileName>
       <FilenameWithoutPath>rit_test.h</FilenameWithoutPath>
     </File>
-  </Group>
-
-  <Group>
-    <GroupName>Output</GroupName>
-    <tvExp>0</tvExp>
-    <tvExpOptDlg>0</tvExpOptDlg>
-    <cbSel>0</cbSel>
   </Group>
 
 </ProjectOpt>
