@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\ucos-ucdemo.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\ucos-ucdemo.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Thu Mar 15 09:25:29 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Thu Mar 15 23:14:32 2018
 <BR><P>
 <H3>Maximum Stack Usage =        200 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -18,7 +18,7 @@ Functions with no stack information
  <LI><a href="#[82]">OSCtxSw</a>
  <LI><a href="#[57]">OSIntCtxSw</a>
  <LI><a href="#[8]">PendSV_Handler</a>
- <LI><a href="#[8f]">IntDisAll</a>
+ <LI><a href="#[92]">IntDisAll</a>
 </UL>
 </UL>
 <P>
@@ -98,7 +98,7 @@ Global Symbols
 <P><STRONG><a name="[2f]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(.text)
 </UL>
-<P><STRONG><a name="[90]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[93]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[35]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -108,9 +108,9 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[36]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[91]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[94]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[92]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8.o(.ARM.Collect$$$$00000009))
+<P><STRONG><a name="[95]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8.o(.ARM.Collect$$$$00000009))
 
 <P><STRONG><a name="[0]"></a>Reset_Handler</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_lpc17xx.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
@@ -276,7 +276,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[35]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[93]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[96]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[45]"></a>OS_CPU_SR_Save</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a.o(OSKernelschedular))
 <BR><BR>[Called By]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeDly
@@ -339,7 +339,7 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a.o(OSKernelschedular))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
 </UL>
-<P><STRONG><a name="[8f]"></a>IntDisAll</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a.o(OSKernelschedular))
+<P><STRONG><a name="[92]"></a>IntDisAll</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, os_cpu_a.o(OSKernelschedular))
 <BR><BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -367,8 +367,8 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTimeTickHook
 </UL>
 
-<P><STRONG><a name="[8c]"></a>CLKPWR_ConfigPPWR</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, lpc17xx_clkpwr.o(i.CLKPWR_ConfigPPWR))
-<BR><BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
+<P><STRONG><a name="[90]"></a>CLKPWR_ConfigPPWR</STRONG> (Thumb, 50 bytes, Stack size 0 bytes, lpc17xx_clkpwr.o(i.CLKPWR_ConfigPPWR))
+<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
 </UL>
 
 <P><STRONG><a name="[3e]"></a>CLKPWR_GetPCLK</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, lpc17xx_clkpwr.o(i.CLKPWR_GetPCLK))
@@ -376,7 +376,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_GetPCLKSEL
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
+<BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
 </UL>
 
 <P><STRONG><a name="[3f]"></a>CLKPWR_GetPCLKSEL</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, lpc17xx_clkpwr.o(i.CLKPWR_GetPCLKSEL))
@@ -389,6 +389,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_GetPointer
 </UL>
 <BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_IRQHandler
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_CleanOutput
 </UL>
 
 <P><STRONG><a name="[42]"></a>GPIO_SetDir</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, lpc17xx_gpio.o(i.GPIO_SetDir))
@@ -411,12 +412,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskDel
 </UL>
 
-<P><STRONG><a name="[94]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[97]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[8d]"></a>CLKPWR_SetPCLKDiv</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, lpc17xx_clkpwr.o(i.CLKPWR_SetPCLKDiv))
+<P><STRONG><a name="[8f]"></a>CLKPWR_SetPCLKDiv</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, lpc17xx_clkpwr.o(i.CLKPWR_SetPCLKDiv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CLKPWR_SetPCLKDiv
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
 </UL>
 
 <P><STRONG><a name="[43]"></a>GPIO_SetValue</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, lpc17xx_gpio.o(i.GPIO_SetValue))
@@ -426,6 +427,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_Init
 <LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_IRQHandler
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_SetOutput
 </UL>
 
 <P><STRONG><a name="[54]"></a>OSDebugInit</STRONG> (Thumb, 118 bytes, Stack size 0 bytes, os_dbg.o(i.OSDebugInit))
@@ -896,7 +898,15 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[39]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_Init
 </UL>
 
-<P><STRONG><a name="[39]"></a>Pluse_Init</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, rit_test.o(i.Pluse_Init))
+<P><STRONG><a name="[89]"></a>Pluse_CleanOutput</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, rit_test.o(i.Pluse_CleanOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Pluse_CleanOutput &rArr; GPIO_ClearValue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_IRQHandler
+</UL>
+
+<P><STRONG><a name="[39]"></a>Pluse_Init</STRONG> (Thumb, 136 bytes, Stack size 16 bytes, rit_test.o(i.Pluse_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = Pluse_Init &rArr; PINSEL_ConfigPin &rArr; set_ResistorMode
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PINSEL_ConfigPin
@@ -906,46 +916,65 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskCreate
 </UL>
 
-<P><STRONG><a name="[89]"></a>RIT_Cmd</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, lpc17xx_rit.o(i.RIT_Cmd))
+<P><STRONG><a name="[8a]"></a>Pluse_SetOutput</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, rit_test.o(i.Pluse_SetOutput))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Pluse_SetOutput &rArr; GPIO_SetValue
+</UL>
+<BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetValue
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_IRQHandler
+</UL>
+
+<P><STRONG><a name="[8b]"></a>RIT_Cmd</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, lpc17xx_rit.o(i.RIT_Cmd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RIT_Cmd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Test_Init
 </UL>
 
-<P><STRONG><a name="[27]"></a>RIT_IRQHandler</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, rit_test.o(i.RIT_IRQHandler))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = RIT_IRQHandler &rArr; GPIO_SetValue
+<P><STRONG><a name="[8d]"></a>RIT_GetIntStatus</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, lpc17xx_rit.o(i.RIT_GetIntStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RIT_GetIntStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
+</UL>
+<BR>[Called By]<UL><LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_IRQHandler
+</UL>
+
+<P><STRONG><a name="[27]"></a>RIT_IRQHandler</STRONG> (Thumb, 128 bytes, Stack size 8 bytes, rit_test.o(i.RIT_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = RIT_IRQHandler &rArr; Pluse_SetOutput &rArr; GPIO_SetValue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetValue
 <LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ClearValue
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_GetIntStatus
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_SetOutput
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Pluse_CleanOutput
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(RESET)
 </UL>
-<P><STRONG><a name="[8b]"></a>RIT_Init</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, lpc17xx_rit.o(i.RIT_Init))
+<P><STRONG><a name="[8e]"></a>RIT_Init</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, lpc17xx_rit.o(i.RIT_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = RIT_Init &rArr; CLKPWR_SetPCLKDiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_ConfigPPWR
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_SetPCLKDiv
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_ConfigPPWR
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_SetPCLKDiv
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Test_Init
 </UL>
 
-<P><STRONG><a name="[3a]"></a>RIT_Test_Init</STRONG> (Thumb, 118 bytes, Stack size 8 bytes, rit_test.o(i.RIT_Test_Init))
+<P><STRONG><a name="[3a]"></a>RIT_Test_Init</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, rit_test.o(i.RIT_Test_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = RIT_Test_Init &rArr; RIT_TimerConfig &rArr; CLKPWR_GetPCLK
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Cmd
+<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Cmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App_TaskCreate
 </UL>
 
-<P><STRONG><a name="[8e]"></a>RIT_TimerConfig</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, lpc17xx_rit.o(i.RIT_TimerConfig))
+<P><STRONG><a name="[91]"></a>RIT_TimerConfig</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, lpc17xx_rit.o(i.RIT_TimerConfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = RIT_TimerConfig &rArr; CLKPWR_GetPCLK
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;check_failed
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLKPWR_GetPCLK
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Test_Init
@@ -965,14 +994,15 @@ Global Symbols
 <P><STRONG><a name="[2e]"></a>SystemInit</STRONG> (Thumb, 282 bytes, Stack size 0 bytes, system_lpc17xx.o(i.SystemInit))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lpc17xx.o(.text)
 </UL>
-<P><STRONG><a name="[95]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[98]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[96]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[99]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[8a]"></a>check_failed</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lpc17xx_libcfg_default.o(i.check_failed))
-<BR><BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Cmd
+<P><STRONG><a name="[8c]"></a>check_failed</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, lpc17xx_libcfg_default.o(i.check_failed))
+<BR><BR>[Called By]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_TimerConfig
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Init
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_GetIntStatus
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RIT_Cmd
 </UL>
 
 <P><STRONG><a name="[2d]"></a>main</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, main.o(i.main))
@@ -983,7 +1013,7 @@ Global Symbols
 <LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSTaskCreateExt
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSStart
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OSInit
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisAll
+<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IntDisAll
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry8.o(.ARM.Collect$$$$00000009)
 </UL><P>

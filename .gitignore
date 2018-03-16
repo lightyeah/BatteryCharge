@@ -3,6 +3,9 @@
 *.d
 *.__i
 *.hex
+*.lst
+*.map
+*.htm
 MDK-ARM/LandTiger_open1768.dep
 MDK-ARM/Obj/ucos-ucdemo.axf
 MDK-ARM/Obj/ucos-ucdemo.lnp

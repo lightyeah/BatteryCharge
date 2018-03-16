@@ -414,8 +414,8 @@ ARM Macro Assembler    Page 7
               00000000 
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\Obj\st
-artup_LPC17xx.d -o.\Obj\startup_LPC17xx.o -IG:\Keil\ARM\RV31\Inc -IG:\Keil\ARM\
-CMSIS\Include -IG:\Keil\ARM\Inc\NXP --predefine="__MICROLIB SETA 1" --list=.\Li
+artup_LPC17xx.d -o.\Obj\startup_LPC17xx.o -IC:\Keil\ARM\RV31\Inc -IC:\Keil\ARM\
+CMSIS\Include -IC:\Keil\ARM\Inc\NXP --predefine="__MICROLIB SETA 1" --list=.\Li
 st\startup_LPC17xx.lst ..\Libraries\CM3\DeviceSupport\NXP\LPC17xx\startup\arm\s
 tartup_LPC17xx.s
 

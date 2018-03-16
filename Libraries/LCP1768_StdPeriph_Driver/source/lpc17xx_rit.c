@@ -58,12 +58,15 @@
  *******************************************************************************/
 void RIT_Init(LPC_RIT_TypeDef *RITx)
 {
-	CHECK_PARAM(PARAM_RITx(RITx));
+	CHECK_PARAM(PARAM_RITx(RITx));	
+	
+	CLKPWR_SetPCLKDiv (CLKPWR_PCONP_PCRIT, CLKPWR_PCLKSEL_CCLK_DIV_1);
+	//Set the clock div,the cpu clock is 25M
+	
 	CLKPWR_ConfigPPWR (CLKPWR_PCONP_PCRIT, ENABLE);
 	//Set up default register values
 	
-	CLKPWR_SetPCLKDiv (CLKPWR_PCONP_PCRIT, CLKPWR_PCLKSEL_CCLK_DIV_1);
-	//Set the clock div,the cpu clock is 12M I guess.
+
 
 	RITx->RICOMPVAL = 0xFFFFFFFF;
 	RITx->RIMASK	= 0x00000000;
@@ -111,7 +114,7 @@ void RIT_TimerConfig(LPC_RIT_TypeDef *RITx, uint32_t time_interval)
 	 * COMPVAL = (RIT_PCLK * time_interval)/1000
 	 * (with time_interval unit is millisecond)
 	 */
-	cmp_value = (clock_rate /100000) * time_interval;
+	cmp_value = (clock_rate /100000 * time_interval);
 	RITx->RICOMPVAL = cmp_value;
 
 	/* Set timer enable clear bit to clear timer to 0 whenever
